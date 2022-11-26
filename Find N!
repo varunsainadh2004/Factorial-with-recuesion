@@ -1,0 +1,10 @@
+def recurfact(a):
+    if a==1 or a==0:
+        return 1
+    else:
+        return a*recurfact(a-1)
+num=int(input("num: "))
+if num<0:
+    print("factorial not exist")
+else:
+    print("factorial:",recurfact(num))
